@@ -1,5 +1,68 @@
 <html>
+
+
 <body>
-<h1> Hi! </h1>
+<style>
+body{
+  color:green;
+   margin: auto;
+
+background:black;
+font-size:130%;
+text-align:center;
+text-indent:30%;
+font-style: italic;
+line-height:50px;
+font-variant: small-caps;
+}
+#toast{
+height:auto;
+padding:5px;
+border-radius: 100%;
+background:rgba(0,0,0,0.6);
+opacity:0;
+width:auto;
+position:fixed;
+bottom:0px;
+margin:auto;
+
+}
+</style>
+
+
+<div id="toast">Error.</div>
+
+<script>
+
+var str="Hello, I am Michael. Sorry, but you just got hacked. Importing files... Copying README... Installing M.3##68aa...                                                                                         fooled you :P :) hahahahahahahh!.......... btw thank you for seeing this time wasting code       bye  have a nice day       .............|";
+var arr=str.split("");
+var speed=0;
+setInterval(
+function(){
+if(speed<arr.length){
+document.body.innerHTML+=arr[speed++];
+}
+
+},100)
+
+setTimeout(function(){
+toast.style.display="opacity:1";
+
+navigator.vibrate(2000,2000);
+alert("Virus Installed; device will be slow.");
+setInterval(function(){
+
+  toast.style.display="opacity:0";
+},1000)
+
+},29300)
+
+
+
+</script>
+
+
+
+
 </body>
 </html>
