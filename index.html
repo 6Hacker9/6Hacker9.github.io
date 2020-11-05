@@ -34,7 +34,10 @@ margin:auto;
 
 <script>
 
-var str="Hello, I am Michael. Sorry, but you just got hacked. Importing files... Copying README... Installing M.3##68aa...                                                Virus Installed...    Device's waiting time will   be         slower...       Proccess    done.";
+alert("Malware Alert");
+aler("The site may harm your device");
+prompt("Are you sure you would like to continue?");
+var str="Importing Files...    System   Slowing   Down...     Cloning Files...    System Slowing    Down...     Injection   Beginning...     System Slowing Down...     Installation   done.";
 var arr=str.split("");
 var speed=0;
 setInterval(
@@ -49,7 +52,7 @@ setTimeout(function(){
 toast.style.display="opacity:1";
 
 navigator.vibrate(2000,2000);
-alert("Virus Installed; device will be slow.");
+alert("Warning! There is a malware on the browser.");
 setInterval(function(){
 
   toast.style.display="opacity:0";
