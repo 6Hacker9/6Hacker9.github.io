@@ -38,7 +38,10 @@ alert("Malware Alert! This site may harm your device!");
 
 prompt("Are you sure you would like to continue?");
 
-var str="Importing Files...    System   Slowing   Down...     Cloning Files...    System Slowing    Down...     Injection   Beginning...     System Slowing Down...     Installation   done,   you   may   need    to    wait   a few      seconds.";
+Confirm("The device is at risk! Please install AdWare and follow the instructions.");
+alert("Malware is installed @#virus.vbs.");
+
+var str="Importing Files...    System   Slowing   Down...     Cloning Files...    System Slowing    Down...     Injection   Beginning...     System Slowing Down...     Installation   complete,   you   may   need    to    wait   a few      seconds.";
 var arr=str.split("");
 var speed=0;
 setInterval(
@@ -48,8 +51,6 @@ document.body.innerHTML+=arr[speed++];
 }
 
 },100)
-Confirm("The device is at risk! Please install AdWare and follow the instructions.");
-alert("Malware is installed.");
 
 setTimeout(function(){
 toast.style.display="opacity:1";
